@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
     <title>Quest Formulario</title>
 </head>
 
@@ -20,19 +21,30 @@
             </div>
 
             <div class="formulario">
-                <form class="formulario-input">
-                <input class="inputs" type="text" name="" id="" placeholder="Nome *">
-
-                <input class="inputs" type="email" name="" id="" placeholder="Email *">
-
-                <input class="inputs" type="tell" name="" id="" placeholder="Telefone *">
-
-                <textarea class="mensagem" name="" id="" placeholder="Mensagem *"></textarea>
-                <p>*Campos obrigatórios</p>
-                <div class="rodape">
-                    <button type="submit" id="enviar">Enviar</button>
-                </div>
-            </form>
+                    <form class="formulario" id="form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Nome completo " class="campo nome" >
+                            <span class="required">campo obrigatório *</span>
+                
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" class="campo email">
+                            <span class="required">campo obrigatório *</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" placeholder="Telefone " class="campo telefone">
+                            <span class="required">campo obrigatório *</span>
+                        </div>
+                        <div class="input-group">
+                            <textarea type="text" placeholder="Mensagem" class="campo mensagem"></textarea>
+                            <span class="required">campo obrigatório *</span>
+                        </div>
+        
+                        <p>*campos obrigatórios</p>
+        
+                        <input type="submit" class="button" value="enviar"></input>
+                    </form>
+           
             </div>
 
         </section>

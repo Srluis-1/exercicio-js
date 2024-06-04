@@ -1,0 +1,54 @@
+@media(max-width:1280px){
+   body{
+    background-size: 110% 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding:auto;
+    margin: auto;
+    height: 900px;
+   }
+   .container  .textos h1{
+    align-items: center;
+    font-size: 28px;
+    width: 80%;
+   }
+
+   .container  .textos p{
+    margin-right: 82px ;
+    font-size: 19px;
+    width: 320px;
+   }
+   .container .textos{
+    margin-top: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .container .formulario{
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    width: 380px;
+    height: 490px;
+   }
+
+   .container .formulario .button{
+    width: 300px;
+    height: 45px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    background: #3CCC87;
+   }
+
+}

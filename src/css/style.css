@@ -43,83 +43,60 @@ body {
 }
 
 
-.container .formulario {
+.container .formulario{
     background-color: #fff;
     display: flex;
     padding-top: 21px;
     flex-direction: column;
     align-items: center;
     width: 400px;
-    height: 550px;
+    height: 600px;
 }
-
-.container .formulario .formulario-input .inputs{
-    display: flex;
-    align-items: center;
+ .container .formulario .input-group{
+    margin: 12px auto;
 }
-
-.container .formulario .formulario-input .inputs {
-    display: flex;
-    margin: 15px auto;
+.container .formulario .input-group .campo{
+    padding: 6px;
     width: 320px;
-    height: 40px;
-    border-radius: 8px;
-    border: 2px solid;
+    height: 35px;
+    border: 2px solid ;
+    border-radius: 5px;
 }
 
-
-.container .formulario .formulario-input .mensagem {
-    display: flex;
-    margin: 15px auto;
+.container .formulario .input-group .campo.mensagem{
     width: 320px;
-    height: 200px;
-    border-radius: 8px;
-    border: 2px solid;
-}
-
-.container .formulario input::placeholder {
-    padding: 5px;
-    font-size: 15px;
-    font-weight: 800;
-}
-
-.container .formulario textarea::placeholder {
-    padding: 5px 7px;
-    font-size: 15px;
-    font-weight: 800;
+    height: 180px;
 }
 
 .container .formulario p{
-    padding-right: 159px;
-    margin: 10px auto;
-    font-size: 20px;
-    font-family: 'Roboto';
-}
-
-.container .formulario .rodape button{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    height: 40px;
-    background-color:  #3CCC87;
-    font-size: 20px;
-    font-weight: 800;
+    padding-right: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.container .formulario .button{
+    width: 300px;
+    height: 45px;
     color: #fff;
+    font-size: 18px;
+    font-weight: 700;
     border-radius: 5px;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
+    background: #3CCC87;
 }
 
-.container .formulario .rodape button:hover{
-    transform: scale(1.1);
+.required{
+    display: none;
 }
 
-
-.bordavermelha{
-    border: 2px solid red;
+.mostrar {
+    color: red;
+    display: block;
 }
-
-.bordaverde{
-    border: 2px solid #3CCC87;
+.formulario .campo.bordaverde{
+    border: 2px solid greenyellow !important;
+}
+.formulario .campo.bordavermelha{
+    border: 2px solid red !important;
 }

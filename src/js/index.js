@@ -1,18 +1,32 @@
-const submit = document.querySelector('enviar')
-const campos = document.querySelectorAll('.inputs')
-const mensagem = document.querySelectorAll('.mensagem')
+const campos = document.querySelectorAll('.campo');
+const required = document.querySelectorAll('.required');
+const enviar   = document.querySelector('.button');
+const form = document.getElementById('form')
 
-submit.addEventListener("click", function(event){
+form.addEventListener("submit", function (event) {
     event.preventDefault()
-    campos.forEach((campos) =>{
-        if(campos.value !=="") {
-            campos.classList.add('berdaverde')
-        
-        }else{
-            campos.classList.add('bordavermelha')
+    campos.forEach((campos) => {
+        if (campos.value !== "") {
+            campos.classList.add('bordaverde');
+            campos.classList.remove('bordavermelha');
+            campos.nextElementSibling.classList.remove('mostrar');
+        } else {
+            campos.classList.remove('bordaverde');
+            campos.classList.add('bordavermelha');
+            campos.nextElementSibling.classList.add('mostrar');
         }
-
     })
-        
+
 })
-   
+
+campos.forEach((campos) => {
+    campos.addEventListener("input", () => {
+        if (campos.value !== "") {
+            campos.classList.add('bordaverde');
+        } else {
+            campos.classList.remove('bordaverde');
+        }
+    
+    })
+    
+})
